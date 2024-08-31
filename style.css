@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: blueviolet;
+    /* display: flex; */
+}
+.container{
+    width: 98vmin;
+    background: linear-gradient(45deg,rgb(83, 82, 82),blueviolet);
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 0.5rem;
+    transform: translate(-50%,-50%);
+    box-shadow: inset 0 0 10px white;
+}
+.container h1{
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 30px;
+    color: white;
+}
+.container label{
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+    color: white;
+    font-weight: 700;
+}
+.container input{
+    padding: 0.5rem;
+    background-color: rgb(225, 223, 223);
+    color: rgb(100, 99, 99);
+    border: none;
+    border-radius: 0.3rem;
+    outline: none;
+}
+.container input:focus{
+    box-shadow: 0 0 15px blueviolet;
+}
+.container button{
+    padding: 0.2rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    width: 10rem;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-top: 1rem;
+    justify-content: center;
+    border-radius: 0.2rem;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+}
+.container button:hover{
+    box-shadow: 0px 0px 15px white;
+    transform: scale(1.01);
+    transition: 0.3s ease-in-out;
+}
+.container button:focus{
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    box-shadow: 0px 0px 15px blueviolet;
+}
+.container #result{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+    border-bottom: 3px solid white;
+    font-weight: 500;
+    color: white;
+}
